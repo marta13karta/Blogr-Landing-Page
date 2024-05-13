@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
+(document.addEventListener('DOMContentLoaded', () => {
 
-  // const hamburger = document.querySelector('.hamburger');
-  // const nav = document.querySelector('.nav-mobile');
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav-mobile');
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
   const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownMenu.style.display = 'block';
         toggle.querySelector('.arrow').style.transform = 'rotate(180deg)';
       }
-    })
-  })
-})
+    });
+  });
+
+
+  // hamburger.addEventListener('click', () => {
+  //   nav.classList.toggle('active');
+  // });
+
+}))();

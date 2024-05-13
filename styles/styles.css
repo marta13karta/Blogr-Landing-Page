@@ -24,6 +24,10 @@ a {
 .header-section, .footer, .main {
     overflow: hidden;
 }
+
+.active {
+    display: block !important;
+}
 /*BUTTONS STYLING*/
 
 button {
@@ -128,11 +132,28 @@ button {
             }
         }
         .nav-mobile {
-            display: none;
-            .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            height: 75vh;
+            width: 100%;
+            background: var(--color-text);
+            padding: 1.5rem 1.5rem;
+            border-radius: 5px;
+            box-shadow: -1px 14px 13px 1px rgba(0,0,0,0.19);
+             .navbar {
                 .dropdown {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    .dropdown-toggle {
+                        color: var(--color-headings);
+                        font-size: 18px;
+                    }
                     .dropdown-menu {
-                        display: none;
+                        display: block;
+                        width: 100%;
                     }
                 }
             }
@@ -355,9 +376,9 @@ button {
         height: clamp(60vh, 100vw, 65vh);
         padding-inline: 4.5rem;
         &::after {
-            width: 200%;
-            top: -19rem;
-            left: -19rem;
+            width: 150%;
+            top: -25rem;
+            left: -15rem;
         }
         .header {
             .logo {
